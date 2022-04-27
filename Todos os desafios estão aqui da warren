@@ -7,10 +7,12 @@
 #    soma = n + i
 #print(f"{n} + {i} = {soma}")
 
-alunos = 10
-for tempodechegada in range(-10, 11):
-    if tempodechegada <= alunos:
-        print("Aula vai ser normal.")
-    else:
-        if tempodechegada > alunos:
-            print("Aula vai ser cancelada.")
+x = 3 #limite de alunos atrasados
+contagematrasados = 0
+tempodechegada = [-2, -1, 0, 1, 2]
+for horario in tempodechegada:
+    if horario > 0:
+        print(f"Faltaram {contagematrasados}, aula cancelada.")
+        contagematrasados = contagematrasados +1
+    if horario <= 0:
+        print("aula normal.")
