@@ -7,12 +7,36 @@
 #    soma = n + i
 #print(f"{n} + {i} = {soma}")
 
-x = 3 #limite de alunos atrasados
-contagematrasados = 0
-tempodechegada = [-2, -1, 0, 1, 2]
-for horario in tempodechegada:
-    if horario > 0:
-        print(f"Faltaram {contagematrasados}, aula cancelada.")
-        contagematrasados = contagematrasados +1
-    if horario <= 0:
-        print("aula normal.")
+#x = 3 #limite de alunos atrasados
+#contagematrasados = 0
+#tempodechegada = [-2, -1, 0, 1, 2]
+#for horario in tempodechegada:
+ #   if horario > 0:
+  #      print(f"Faltaram {contagematrasados}, aula cancelada.")
+   #     contagematrasados = contagematrasados +1
+    #if horario <= 0:
+     #   print("aula normal.")
+
+
+from random import randint
+
+n = 10
+v = []
+i = 0
+
+def somatotal(lista):
+    soma = 0
+    for i in lista:
+        soma += i
+    return soma
+
+print(n)
+while i <= n:
+    for i in range(0, 5):
+        i = i + 1
+        v.append(i)
+    if somatotal == n:
+        break
+
+print(somatotal(v))
+print(v)
